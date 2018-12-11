@@ -1,4 +1,4 @@
-package br.com.connection.redis;
+package br.com.connection.redis.response;
 
 import br.com.connection.redis.entity.Person;
 

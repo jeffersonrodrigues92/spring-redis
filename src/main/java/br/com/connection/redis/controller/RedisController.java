@@ -1,12 +1,11 @@
 package br.com.connection.redis.controller;
 
-import br.com.connection.redis.ResponseTime;
+import br.com.connection.redis.response.ResponseTime;
 import br.com.connection.redis.entity.Person;
 import br.com.connection.redis.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
