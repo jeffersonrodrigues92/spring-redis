@@ -4,16 +4,16 @@ phases:
   install:
     commands:
       - echo Cleaning project...
-      - gradle clean
+      - mvn clean
   pre_build:
     commands:
       - echo Installing Maven dependencies...
-      - mvn clean install
+      - mvn install
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling with gradle build 
-      - gradle build
+      - echo Build started
+      - echo Compiling with mvn compile 
+      - mvn compile
   post_build:
     commands:
       - echo Build completed
