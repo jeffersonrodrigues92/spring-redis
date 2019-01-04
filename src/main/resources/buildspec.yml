@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Cleaning project...
+      - gradle clean
+  pre_build:
+    commands:
+      - echo Installing Maven dependencies...
+      - mvn clean install
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling with gradle build 
+      - gradle build
+  post_build:
+    commands:
+      - echo Build completed
